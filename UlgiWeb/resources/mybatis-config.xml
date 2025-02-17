@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<settings>
+		<setting name="jdbcTypeForNull" value="NULL"></setting>
+	</settings>
+	<typeAliases>
+		<typeAlias type="com.ulgi.lease.model.vo.Library" alias="Library"/>
+	</typeAliases>
+	<environments default= "development">
+		<environment id="development">
+			<transactionManager type="JDBC"></transactionManager>
+			<dataSource type="POOLED">
+				<property name="driver" value="oracle.jdbc.driver.OracleDriver"/>
+				<property name="url" value="jdbc:oracle:thin:@localhost:1521:xe"/>
+				<property name="username" value="ULGI"/>
+				<property name="password" value="ULGI"/>
+			</dataSource>
+		</environment>
+	</environments>
+	<mappers>
+		<mapper resource="mapper/book-mapper.xml"/>
+		<mapper resource="mapper/lease-mapper.xml"/>
+		<mapper resource="mapper/customer-mapper.xml"/>
+	</mappers>
+</configuration>

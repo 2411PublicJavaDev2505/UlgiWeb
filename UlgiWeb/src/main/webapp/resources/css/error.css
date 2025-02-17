@@ -1,0 +1,36 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'CookieRun-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/CookieRun-Regular.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+#main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #fffbfb;
+	padding : 50px 0 50px 0;
+	font-family: 'CookieRun-Regular';	
+}
+
+#main .error-box {
+	width: 500px;
+	height: 500px;
+	margin: 0 auto;
+	padding : 20px;
+	background-color: #fff1fa;
+	border-radius: 20px;
+}
+
+.errorCode {
+	text-align: center;
+	font-size: 200px;
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+
+.errorMessage {
+	text-align: center;
+	font-size: 30px;
+}
